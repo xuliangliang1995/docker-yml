@@ -1,4 +1,4 @@
-version: '2'
+version: '3'
 services:
     zoo:
         image: zookeeper
@@ -8,11 +8,6 @@ services:
             - "2181:2181"
             - "2888:2888"
             - "3888:3888"
-        networks:
-            - zookeeper_net
         environment:
             ZOO_MY_ID: 2
             ZOO_SERVERS: server.1=182.92.3.187:2888:3888 server.2=182.92.160.62:2888:3888 server.3=39.96.42.239:2888:3888
-networks:
-    zookeeper_net:
-        driver: host
