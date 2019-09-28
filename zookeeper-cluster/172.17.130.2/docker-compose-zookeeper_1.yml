@@ -12,7 +12,7 @@ services:
             - zookeeper_net
         environment:
             ZOO_MY_ID: 1
-            ZOO_SERVERS: server.1=172.17.130.2:2888:3888 server.2=172.17.130.3:2888:3888 server.3=172.17.130.4:2888:3888
+            ZOO_SERVERS: server.1=182.92.3.187:2888:3888 server.2=182.92.160.62:2888:3888 server.3=39.96.42.239:2888:3888
 networks:
     zookeeper_net:
         driver: bridge
