@@ -16,3 +16,4 @@ services:
 networks:
     zookeeper_net:
         driver: bridge
+        enable_ipv6: false
