@@ -6,6 +6,8 @@ services:
         container_name: zookeeper_1
         ports:
             - "2181:2181"
+            - "2888:2888"
+            - "3888:3888"
         environment:
             ZOO_MY_ID: 1
             ZOO_SERVERS: server.1=172.17.130.2:2888:3888 server.2=172.17.130.3:2888:3888 server.3=172.17.130.4:2888:3888
